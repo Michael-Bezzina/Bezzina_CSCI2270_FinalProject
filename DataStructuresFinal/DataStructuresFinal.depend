@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1461686625 source:/home/user/Dropbox/DataStructuresFinal/src/Final.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<stdlib.h>
+	"Final.h"
+
+1461550133 /home/user/Dropbox/DataStructuresFinal/include/Final.h
+	<string>
+	<vector>
+
+1461550340 source:/home/user/Dropbox/DataStructuresFinal/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<stdlib.h>
+	"Final.h"
+
