@@ -36,7 +36,7 @@ int main()
     }
 
     HT.printNames();
-    int input=0;
+    string input;
 
         cout << "Greetings agent," << endl;
         cout << endl;
@@ -48,7 +48,7 @@ int main()
         cout << "Good Luck!" << endl;
         cout << endl;
 
-    while(input<7){
+    while(input!="7"){
         cout << "1. What is my Super name!?" << endl;
         cout << "2. Learn your abilities" << endl;
         cout << "3. Learn your weakness" << endl;
@@ -56,11 +56,10 @@ int main()
         cout << "5. Discover your enemies" << endl;
         cout << "6. Learn your catch phrase" << endl;
         cout << "7. Quit" << endl;
-        cin>>input;
-        cin.ignore();
+        getline(cin,input);
         cout<<endl;
 
-        if(input==1){
+        if(input=="1"){
             string input;
             cout<<"Enter First Name:"<<endl;
             getline(cin,input);
@@ -76,23 +75,23 @@ int main()
             cout<<"Your Super Name:"<<endl;
             HT.getName(input,input2);
         }
-        if(input==2){
+        else if(input=="2"){
             cout<<"Your Power:"<<endl;
             HT.getPower();
         }
-        if(input==3){
+        else if(input=="3"){
             cout<<"Your Weakness:"<<endl;
             HT.getWeakness();
         }
-        if(input==4){
+        else if(input=="4"){
             cout<<"Your Friends:"<<endl;
             HT.getFriends();
         }
-        if(input==5){
+        else if(input=="5"){
             cout<<"Your Enemies:"<<endl;
             HT.getEnemies();
         }
-        if(input==6){
+        else if(input=="6"){
             cout<<"Your Catch Phrase:"<<endl;
             HT.getPhrase();
         }
